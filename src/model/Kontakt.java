@@ -11,6 +11,7 @@ public class Kontakt {
 	String PLZ;
 	String EMail;
 	String Erstellungsdatum;
+	
 	public String getFirma() {
 		return Firma;
 	}
@@ -64,5 +65,9 @@ public class Kontakt {
 	}
 	public void setErstellungsdatum(String erstellungsdatum) {
 		Erstellungsdatum = erstellungsdatum;
+	}
+	
+	public String toString() {
+		return Kontakt + ", " + Firma + ", " + Adresse + ", " + Stadt;
 	}
 }
