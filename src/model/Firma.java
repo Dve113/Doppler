@@ -86,4 +86,7 @@ public class Firma {
 		Land = land;
 	}
 	
+	public String toString() {
+		return Firma + ", " + Adresse1 + ", " + Stadt;
+	}
 }

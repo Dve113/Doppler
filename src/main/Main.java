@@ -1,10 +1,17 @@
 package main;
 
+import java.util.ArrayList;
+
+import io.ImportCSVToObject;
+import io.PrintObjectList;
+import model.Firma;
+
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("Hello World 2!!!");
-	}
 
+		ArrayList<Firma> List = ImportCSVToObject.importCSVToFirma("csv_act_firmen");
+		PrintObjectList.printList(List);
+		
+	}
 }
